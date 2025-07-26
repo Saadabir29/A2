@@ -188,4 +188,56 @@ a {
   gap: 60px;
 }
 
+.lover-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
+.lover-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 250px;
+  animation: spin 4s linear infinite;
+  filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lover-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.lover-content h2 {
+  font-size: 55px;
+  font-weight: 550;
+  margin-bottom: 20px;
+  color: #000;
+  line-height: 1.2;
+}
+
+.lover-content ul {
+  color: #898282;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.lover-content ul li {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
