@@ -1,3 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Poppins", sans-serif, 'Segoe UI';
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px; /* Desktop padding */
+  position: relative;
+  z-index: 1000;
+}
+
+.shop,
+.about {
+  color: #898282;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.nav-links {
+  display: flex; /* Always flex on desktop */
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hamburger menu icon - Always hidden on desktop */
+.hamburger-menu {
+  display: none;
+}
+
+/* Banner */
+.banner {
+  display: flex; /* Default to flex for desktop (side-by-side) */
+  justify-content: space-between;
+  align-items: center;
+  padding: 160px 120px 80px 120px; /* Desktop padding */
+  gap: 60px;
+}
+
+.banner-content {
+  flex: 1;
+  max-width: 50%; /* Control content width on desktop */
+  text-align: left; /* Default text alignment for desktop */
+}
+
+.banner-content h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.banner-content .bold {
+  color: #000;
+}
+
+.banner-content .highlight {
+  color: #f15b2a;
+  display: inline-block;
+}
+
+.banner-content .highlight:first-of-type {
+  margin-left: 0;
+}
+
+.banner-content p {
+  color: #898282;
+  margin-top: 20px;
+  max-width: 550px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align image to the right on desktop */
+}
+
+.banner-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
 
 
 
