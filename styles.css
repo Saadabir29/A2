@@ -325,3 +325,393 @@ a {
 .deal-overlay button:hover {
   color: #05aa16;
 }
+
+
+/* Join Section */
+.join {
+  background: url("./assets/news-letter-bg.png") no-repeat center center/cover;
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+}
+
+.join h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.join-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.join-form input {
+  padding: 18px 20px;
+  width: 450px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+  color: #333;
+}
+.join-form input::placeholder {
+  color: #b5b4b4;
+}
+
+.join-form button {
+  padding: 18px 45px;
+  border: none;
+  background: #f15b2a;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+  background: #28a745;
+}
+
+/* Footer */
+.custom-footer {
+  color: #898282;
+  padding: 80px 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-left {
+  max-width: 300px;
+}
+
+.footer-left img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer-middle {
+  display: flex;
+  gap: 100px;
+}
+
+.footer-links-group {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.footer-links-group a {
+  font-size: 15px;
+  color: #898282;
+  transition: color 0.3s ease;
+}
+
+.footer-links-group a:hover {
+  color: #11c11f;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-right img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.footer-right img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Responsive Design for iPhone 14 & 15 (and similar mobile devices) */
+@media (max-width: 768px) {
+    body {
+  scrollbar-width: none;
+  overflow-x: hidden; 
+  margin 0;
+  padding 0;
+}
+
+  /* Navbar for Mobile */
+  .navbar {
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .nav-links .cart {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar .logo {
+    order: 1;
+  }
+
+  .navbar .nav-links .cart {
+    order: 2;
+  }
+
+  /* Banner for Mobile */
+  .banner {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .banner-content {
+    order: 2;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .banner-image {
+    margin-bottom: 20px;
+  }
+    .banner-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+  .banner-content h1 {
+    font-size: 38px;
+  }
+
+  .banner-content .bold {
+    display: block;
+    margin-bottom: 0px;
+    line-height: 1.1;
+  }
+
+  .banner-content .highlight {
+    margin-left: 0;
+    display: block;
+    line-height: 1.1;
+  }
+
+  .banner-content .highlight:last-of-type {
+    margin-bottom: 0;
+  }
+  .banner-content p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  /* Plants section adjustments */
+  .plants-box {
+    padding: 40px 20px;
+  }
+
+  .plants-title {
+    font-size: 32px;
+  }
+
+  .plant-cards {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for plant cards */
+    gap: 20px;
+  }
+
+  .plant-card img {
+    height: 150px;
+  }
+
+  /* Plant Lover section adjustments */
+  .plant-lover {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .lover-image {
+    width: 100%;
+    order: 2;
+    position: static;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .lover-content {
+    order: 3;
+    max-width: 100%;
+    text-align: left;
+  }
+  .lover-content h2 {
+    font-size: 29px;
+    line-height: 1.4;
+    text-align: left;
+    font-weight: 600;
+  }
+  .lover-content ul {
+    text-align: left;
+  }
+  .lover-content ul li {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  /* Deals section adjustments */
+  .deals {
+    padding: 40px 35px;
+  }
+
+  .deals h2 {
+    font-size: 32px;
+  }
+
+.deal-layout {
+  display: flex;
+  gap: 24px;
+}
+
+/* Left column contains two stacked cards */
+.deal-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+
+/* Card styles */
+.deal-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small card */
+.deal-small {
+  height: 200px;
+}
+
+/* Right large card */
+.deal-large {
+  flex: 2;
+  height: 440px;
+}
+
+/* Overlay text and button */
+.deal-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.deal-overlay h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.deal-overlay button {
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  /* Join section adjustments */
+  .join {
+    padding: 90px 40px;
+  }
+
+  .join h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+
+  .join-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .join-form input {
+    max-width: 60%;
+    text-align: left;
+  }
+  .join-form input::placeholder {
+    color: #b5b4b4;
+  }
+
+  .join-form button {
+    max-width: 30%;
+    padding: 18px 15px;
+  }
+  .join-form button:hover {
+    background: #28a745;
+  }
+
+  /* Footer adjustments */
+  .custom-footer {
+    display: flex;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .footer-left,
+  .footer-middle {
+    max-width: 100%;
+    line-height: 1;
+  }
+
+  .footer-left img {
+    width: 180px;
+    margin: 0 auto 20px auto;
+  }
+
+  .footer-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-links-group {
+    align-items: left;
+  }
+
+  .footer-right {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
