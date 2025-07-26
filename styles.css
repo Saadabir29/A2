@@ -106,5 +106,86 @@ a {
   object-fit: contain;
 }
 
+/* Plants Section */
+.plants-box {
+  padding: 20px 100px;
+}
+
+.plants-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.plants-title .highlight {
+  color: #f15b2a;
+}
+
+.plants-description {
+  text-align: center;
+  color: #898282;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.plant-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.plant-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.plant-card img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.plant-card h3 {
+  font-size: 18px;
+  font-weight: 550;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.plant-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 400;
+}
+
+.plant-card button {
+  background: #f15b2a;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.plant-card button:hover {
+  background: #28a745;
+}
+
+/* Plant Lover Section */
+.plant-lover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 120px;
+  gap: 60px;
+}
 
 
